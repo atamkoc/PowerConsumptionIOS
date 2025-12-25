@@ -1,0 +1,269 @@
+•
+
+input*
+àà €R
+var_13*
+@àà €¢Þ¢:
++com.github.apple.coremltools.source_dialectTorchScript¢+
+$com.github.apple.coremltools.version9.0¢:
+,com.github.apple.coremltools.conversion_date
+2025-12-18¢3
+#com.github.apple.coremltools.sourcetorch==2.9.1²‚•
+mainŒ
+)
+input 
+
+
+
+à
+àCoreML5Õ
+CoreML5Évar_13g
+const
+var_13_pad_type_0
+*
+val
+
+
+"
+custom*&
+name
+
+"
+op_13_pad_type_0k
+const
+var_13_pad_0
+
+
+*!
+val
+
+
+
+
+
+*!
+name
+
+"
+op_13_pad_0q
+const 
+var_13_strides_0
+
+
+*
+val
+
+
+
+
+*%
+name
+
+"
+op_13_strides_0u
+const"
+var_13_dilations_0
+
+
+*
+val
+
+
+
+
+*'
+name
+
+"
+op_13_dilations_0^
+const
+var_13_groups_0
+*
+val
+
+
+*$
+name
+
+"
+op_13_groups_0¡
+const6
+&var_13_has_output_shape_output_shape_0
+
+
+*#
+val
+
+
+
+
+
+@àà*;
+name3
++
+)"'
+%op_13_has_output_shape_output_shape_0n
+const
+input_to_fp16_dtype_0
+*
+val
+
+
+"
+fp16*+
+name#
+
+"
+input_to_fp16_dtype_0·
+const6
+var_0_weight_to_fp16
+
+
+
+@
+
+*K
+valD
+
+
+
+@
+
+*"
+@model_path/weights/weight.bin@*)
+name!
+
+"
+op_0_weight_to_fp16
+const"
+var_0_bias_to_fp16
+
+
+
+@*:
+val3
+
+
+
+@*#
+@model_path/weights/weight.bin€*'
+name
+
+"
+op_0_bias_to_fp16‹
+cast
+x	
+
+input"
+dtype
+
+input_to_fp16_dtype_01
+input_to_fp16 
+
+
+
+
+à
+à*
+name
+
+
+"
+cast_1È
+conv_transpose
+bias
+
+var_0_bias_to_fp16
+pad
+
+var_13_pad_0#
+	dilations
+
+var_13_dilations_0"
+weight
+
+var_0_weight_to_fp16!
+pad_type
+
+var_13_pad_type_0
+x
+
+input_to_fp16
+strides
+
+var_13_strides_0:
+output_shape*
+(
+&var_13_has_output_shape_output_shape_0
+groups
+
+var_13_groups_0E
+!var_13_has_output_shape_cast_fp16 
+
+
+
+@
+à
+à*6
+name.
+&
+$""
+ op_13_has_output_shape_cast_fp16¥
+const9
+1var_13_has_output_shape_cast_fp16_to_fp32_dtype_0
+*
+val
+
+
+"
+fp32*F
+name>
+6
+4"2
+0op_13_has_output_shape_cast_fp16_to_fp32_dtype_0¼
+cast*
+x%
+#
+!var_13_has_output_shape_cast_fp16>
+dtype5
+3
+1var_13_has_output_shape_cast_fp16_to_fp32_dtype_0*
+var_13 
+
+
+@
+à
+à*
+name
+
+
+"
+cast_0"å
+	buildInfo×"
+
+
+Ä"Á
+6
+!
+
+"
+coremltools-version
+	
+"
+9.0
+@
+)
+!
+"
+coremltools-component-torch
+
+	"
+2.9.1
+E
+(
+ 
+"
+coremltools-source-dialect
+
+"
+TorchScript

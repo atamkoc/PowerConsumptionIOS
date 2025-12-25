@@ -1,0 +1,126 @@
+ê
+
+input*
+
+  †ÄR
+var_2*
+
+  †Ä¢ﬁ¢:
++com.github.apple.coremltools.source_dialectTorchScript¢+
+$com.github.apple.coremltools.version9.0¢:
+,com.github.apple.coremltools.conversion_date
+2025-12-18¢3
+#com.github.apple.coremltools.sourcetorch==2.9.1≤œ‚
+mainŸ
+'
+input
+
+
+
+ 
+ CoreML5§
+CoreML5òvar_2n
+const
+input_to_fp16_dtype_0
+*
+val
+
+
+"
+fp16*+
+name#
+
+"
+input_to_fp16_dtype_0â
+cast
+x	
+
+input"
+dtype
+
+input_to_fp16_dtype_0/
+input_to_fp16
+
+
+
+
+ 
+ *
+name
+
+
+"
+cast_1w
+relu
+x
+
+input_to_fp161
+var_2_cast_fp16
+
+
+
+
+ 
+ *$
+name
+
+"
+op_2_cast_fp16Å
+const'
+var_2_cast_fp16_to_fp32_dtype_0
+*
+val
+
+
+"
+fp32*4
+name,
+$
+"" 
+op_2_cast_fp16_to_fp32_dtype_0ï
+cast
+x
+
+var_2_cast_fp16,
+dtype#
+!
+var_2_cast_fp16_to_fp32_dtype_0'
+var_2
+
+
+
+ 
+ *
+name
+
+
+"
+cast_0"Â
+	buildInfo◊"
+
+
+ƒ"¡
+6
+!
+
+"
+coremltools-version
+	
+"
+9.0
+@
+)
+!
+"
+coremltools-component-torch
+
+	"
+2.9.1
+E
+(
+ 
+"
+coremltools-source-dialect
+
+"
+TorchScript
